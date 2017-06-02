@@ -1,5 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  padding-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Lobster', sans-serif;
+  padding-top: 20px;
+}
+
+.top-nav {
+  display: flex;
+  background: #000;
+  min-height: 50px;
+  overflow: hidden;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.top-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Lobster', sans-serif;
+  border-bottom: : 3px solid #000;
+  transition: .5s;
+}
+
+.top-nav a:hover {
+  color: #AEB05D;
+}
+
+.brand-text {
+  font-size: 30px;
+  font-family: 'Lobster', sans-serif;
+  margin-left: 15px;
+}
+
+.top-nav-list {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+}
+
+.top-nav-list li {
+  margin: 0px 15px;
+}
+
+.top-nav-list a {
+  padding: 5px;
+}
+
+.full-screen-bg {
+  height: calc(100vh - 50px);
+  width: 100%;
+  background-image: url("../images/tiger-l.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #AEB05D;
+  font-size: 40px;
+  font-family: 'Lobster', sans-serif;
+  transition: background-image .5s;
+  text-align: center;
+}
+
+ .flex-row {
+   display: flex;
+ }
+
+.col-4-2-1 {
+  width: 23%;
+  margin: 1%;
+  padding: 10px;
+}
+
+.col-4-2-1 img {
+  border-radius: 50%;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.col-4-2-1 p {
+  font-family: 'Lobster', sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .full-screen-bg {
+    background-image: url("../images/lion-m.jpeg");
+  }
+  .flex-row{
+    flex-wrap: wrap;
+  }
+  .col-4-2-1 {
+    width: 48%;
+  }
+}
+@media (max-width: 600px) {
+  .top-nav {
+    display: block;
+  }
+  .full-screen-bg {
+    background-image: url("../images/cheetha-s.jpeg");
+    color: white;
+  }
+  .col-4-2-1 {
+    width: 98%;
+  }
 }
